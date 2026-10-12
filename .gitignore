@@ -1,0 +1,5 @@
+.DS_Store
+
+# Netflix's actual trademarked "ta-dum" sting — not ours to publish/redistribute.
+# Drop your own legally-obtained copy locally at this path; it stays untracked.
+example/assets/intro-sound.mp3

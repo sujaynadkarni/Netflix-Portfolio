@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujay Nadkarni — Portfolio</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="intro-screen" class="intro-screen">
+  <div class="intro-logo" id="intro-logo"></div>
+</div>
+
+<div id="profiles-screen" class="profiles-screen hidden">
+  <h1 class="profiles-title">Who's Watching?</h1>
+  <div class="profiles-grid" id="profiles-grid"></div>
+</div>
+
+<div id="app" class="app hidden">
+  <header class="topnav" id="topnav">
+    <div class="topnav-left">
+      <span class="brand" id="brand-logo"></span>
+      <nav class="nav-links" id="nav-links"></nav>
+    </div>
+    <div class="topnav-right">
+      <button class="profile-chip" id="profile-chip" title="Switch profile"></button>
+    </div>
+  </header>
+
+  <main id="view-root" class="view-root"></main>
+
+  <footer class="site-footer">
+    <p>Built with the <strong>Netflix-Style Portfolio</strong> generator &mdash; <a href="https://github.com/" id="footer-repo-link" target="_blank" rel="noopener">view the skill on GitHub</a></p>
+  </footer>
+</div>
+
+<div id="media-modal" class="media-modal hidden">
+  <div class="media-modal-dialog">
+    <div class="media-modal-header">
+      <span id="media-modal-title"></span>
+      <button id="media-modal-close" class="media-modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="media-modal-body">
+      <iframe id="media-modal-frame" class="hidden" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <p id="media-modal-placeholder" class="media-modal-placeholder"></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

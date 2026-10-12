@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "example-site",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/sujay/Documents/Netflix/example && python3 -m http.server 4173"],
+      "port": 4173
+    },
+    {
+      "name": "template-site",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd template && python3 -m http.server 4174"],
+      "port": 4174
+    }
+  ]
+}
