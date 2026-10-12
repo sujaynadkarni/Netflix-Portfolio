@@ -4,6 +4,51 @@ A personal portfolio site styled as a Netflix-style "Who's Watching?" experience
 
 This is a fan-made homage built for personal use — not affiliated with, endorsed by, or sponsored by Netflix, Inc.
 
+## Build your own
+
+### Option A: with Claude or ChatGPT (recommended)
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/sujaynadkarni/Netflix-Portfolio.git
+   cd Netflix-Portfolio
+   ```
+2. **Open the folder in an AI coding assistant.**
+   - In **Claude Code**: run `claude` inside the `Netflix-Portfolio` folder.
+   - In **ChatGPT** or **Claude.ai** (web chat, no file access): open a new chat and upload/paste the contents of `template/js/data.sample.js` and `template/index.html` so it has the structure to work from.
+3. **Paste this prompt** (edit the first line if you're in a plain web chat instead of a coding assistant):
+   ```text
+   I just cloned the Netflix-Portfolio template (you have access to this
+   folder). Act as my portfolio builder: ask me for my name, 2-4 "Who's
+   Watching" personas, a short bio per persona, my skills (grouped by
+   category), my projects, my work experience, and my contact links
+   (email, LinkedIn, GitHub, resume link).
+
+   Once I've answered, copy the `template/` folder to a new folder called
+   `output/` and fill in `output/js/data.js` with my answers, following the
+   exact structure already in `template/js/data.sample.js`. Don't modify
+   `template/` itself. Card "posters" can stay as the default gradients, or
+   you can offer to generate original AI artwork for a few of them if you
+   have image-generation tools available.
+   ```
+4. **Answer its questions** about yourself — name, personas, bio, skills, projects, experience, contact links.
+5. **Preview it:**
+   ```bash
+   cd output
+   python3 -m http.server 4173
+   ```
+   Then open `http://localhost:4173` in your browser.
+
+### Option B: no AI, just Python
+
+```bash
+git clone https://github.com/sujaynadkarni/Netflix-Portfolio.git
+cd Netflix-Portfolio
+python3 generate.py
+```
+
+Answer the prompts in your terminal; it writes a ready-to-view site into `./output` (see `generate.py --help` for a non-interactive `--data`/`--out` mode).
+
 ## Structure
 
 - **`example/`** — the live site, built from this template with real content.
